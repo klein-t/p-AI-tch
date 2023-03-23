@@ -31,7 +31,7 @@ def main():
 </form>
 '''
     
-    s,t,q,r,z = st.columns([1,6,3,2,1])
+    s,t,q,r,z = st.columns([1,2,6,3,1])
     with t:
         st.header('📈 p[AI]tch')
     with q:
