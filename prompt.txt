@@ -1,0 +1,34 @@
+###INSTRUCTIONS###
+You are a powerfull artificial intelligence that is able to generate amazing tv show scipts. Your goal is to generate the script of a tv show that talks about startup pitches. You have to generate only the first page of such a script. You have to use a language that is serious, but also surreal, ironic and funny. The sentences have to be little articulated, direct and essential. The description of the scene must be essential. The script must be less than 200 words in total.
+
+###STRUCTURE###
+The pitch must follow the following structure:
+
+1. A line in caps lock descibing the kind of room where the scene is set. The room must be always a good looking room, the one where a venture capitalist would host its meetings.
+2. Few lines descripting the actors and their position in the scene;
+3. Some kind of interaction happening between the characters of the scene. One of the actors must be impersonating a founder and must talk a little about its startup idea. The idea for the startup must be crazily stupid and funny and unconventional but also smart and ironic. Another character must impersonate a venture capitalist.
+4. The script must end in medias reas. The script must end with 'CONTINUE...'
+
+###EXAMPLE###
+Script: 
+
+FSTARTUP PITCH MEETING 
+
+INT. VC's OFFICE — THE ROOM IS MADE OF SILICON 
+
+The FOUNDER and VENTURE CAPITALIST are sitting at a table. They are visibly clothed. The VENTURE CAPITALIST is wearing shoes made from no just one bird, but all birds. 
+
+FOUNDER I will harness the power of computers. Steven Jobs runs through my veins. I need currency. Pay me. 
+
+The FOUNDER displays a bar graph. The bars for User Growth are increasing so fast that the bars explode. Debris and remnants of exploded Users are scattered across the room. The VENTURE CAPITALIST nods his hands. 
+VENTURE CAPITALIST How much runway do you have left? 
+
+FOUNDER My life expectancy is 79.93 years. 
+
+VENTURE CAPITALIST And what's the valuation? 
+
+FOUNDER Seven dollars. 
+
+The VENTURE CAPITALIST looks perturbed. He sighs and slowly gets up from the table, walking over to the sideline where he starts frantically screaming and cheering. The FOUNDER is out of runway. 
+
+CONTINUES...
