@@ -33,7 +33,7 @@ def main():
     
     s,t,q,r,z = st.columns([1,2,6,3,1])
     with t:
-        st.header('📈 p[AI]tch')
+        st.header('📈 p[AI]tch:')
     with q:
         st.subheader('a comparison on the effort to build something with AI a year ago VS')
     with r:
@@ -47,7 +47,8 @@ def main():
             st.markdown(f'or buy me a coffee', unsafe_allow_html=True)
         with rr:
             st.markdown(donate, unsafe_allow_html=True)
-
+            
+    st.markdown("""---""")
     x, uno, due, y = st.columns([1,4,4,1], gap='medium')
     with uno:
         st.subheader('ONE YEAR AGO...')
