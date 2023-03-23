@@ -35,7 +35,8 @@ def main():
     with t:
         st.header('📈 p[AI]tch:')
     with q:
-        st.subheader('a comparison on the effort to build something with AI a year ago VS now')
+        st.subheader(
+            'omparing the effort required to build something with AI a year ago VS now')
     with r:
     # Add content to the footer container
         st.markdown('<div style="text-align: left">chek the code at <a href="https://github.com/klein-t">klein-t/p[AI]tch</a></div>', unsafe_allow_html=True)
