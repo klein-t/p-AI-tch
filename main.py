@@ -24,7 +24,7 @@ def main():
         follow_button = f'<a href="https://twitter.com/{username}?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@{username}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
         return follow_button
     
-    donate = '''<form action="https://www.paypal.com/donate" method="post" target = "_blank" secure >
+    donate = '''<form action="https://www.paypal.com/donate" method="post" >
 <input type="hidden" name="hosted_button_id" value="UF6NAEW2NCQN2" />
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
@@ -36,7 +36,7 @@ def main():
         st.header('📈 p[AI]tch:')
     with q:
         st.subheader(
-            'comparing the effort required to build something with AI a year ago VS now' 🌠)
+            'comparing the effort required to build something with AI a year ago VS now 🌠')
     with r:
     # Add content to the footer container
         st.markdown(
