@@ -24,7 +24,7 @@ def main():
         follow_button = f'<a href="https://twitter.com/{username}?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@{username}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
         return follow_button
     
-    donate = '''<form action="https://www.paypal.com/donate" method="post" target="_top">
+    donate = '''<form action="https://www.paypal.com/donate" method="post" target = "_blank" secure >
 <input type="hidden" name="hosted_button_id" value="UF6NAEW2NCQN2" />
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
@@ -36,10 +36,11 @@ def main():
         st.header('📈 p[AI]tch:')
     with q:
         st.subheader(
-            'comparing the effort required to build something with AI a year ago VS now')
+            'comparing the effort required to build something with AI a year ago VS now' 🌠)
     with r:
     # Add content to the footer container
-        st.markdown('<div style="text-align: left">chek the code at <a href="https://github.com/klein-t">klein-t/p[AI]tch</a></div>', unsafe_allow_html=True)
+        st.markdown(
+            '<div style="text-align: left">chek the code at <a href="https://github.com/klein-t/p-AI-tch">klein-t/p[AI]tch</a></div>', unsafe_allow_html=True)
 # Create the follow button
         twitter_handle = "KleinTahiraj"
         st.markdown(f'follow me on Twitter {twitter_follow_button(twitter_handle)}', unsafe_allow_html=True)
