@@ -35,7 +35,7 @@ def main():
     with t:
         st.header('📈 p[AI]tch:')
     with q:
-        st.subheader('a comparison on the effort to build something with AI a year ago VS')
+        st.subheader('a comparison on the effort to build something with AI a year ago VS now')
     with r:
     # Add content to the footer container
         st.markdown('<div style="text-align: left">chek the code at <a href="https://github.com/klein-t">klein-t/p[AI]tch</a></div>', unsafe_allow_html=True)
@@ -47,7 +47,7 @@ def main():
             st.markdown(f'or buy me a coffee', unsafe_allow_html=True)
         with rr:
             st.markdown(donate, unsafe_allow_html=True)
-            
+
     st.markdown("""---""")
     x, uno, due, y = st.columns([1,4,4,1], gap='medium')
     with uno:
