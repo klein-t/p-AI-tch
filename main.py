@@ -34,9 +34,9 @@ def main():
     s,t,q,r,z = st.columns([1,6,3,2,1])
     with t:
         st.header('📈 p[AI]tch')
-    with r:
-        st.subheader('a comparison on the effort to build something with AI a year ago VS now')
     with q:
+        st.subheader('a comparison on the effort to build something with AI a year ago VS')
+    with r:
     # Add content to the footer container
         st.markdown('<div style="text-align: left">chek the code at <a href="https://github.com/klein-t">klein-t/p[AI]tch</a></div>', unsafe_allow_html=True)
 # Create the follow button
