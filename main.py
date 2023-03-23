@@ -31,7 +31,7 @@ def main():
 </form>
 '''
     
-    s,t,q,r = st.columns([1,6,2,1])
+    s,t,q,r,z = st.columns([1,6,,3,2,1])
     with t:
         st.header('📈 p[AI]tch')
     with q:
@@ -42,7 +42,7 @@ def main():
         st.markdown(f'follow me on Twitter {twitter_follow_button(twitter_handle)}', unsafe_allow_html=True)
         ll,rr = st.columns([10,9], gap = 'small')
         with ll:
-            st.markdown(f'or buy me a coffee c:', unsafe_allow_html=True)
+            st.markdown(f'or buy me a coffee', unsafe_allow_html=True)
         with rr:
             st.markdown(donate, unsafe_allow_html=True)
 
