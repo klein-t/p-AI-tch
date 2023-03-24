@@ -36,7 +36,8 @@ def main():
         st.header('📈 p[AI]tch:')
     with q:
         st.subheader(
-            'comparing the effort required to build something with AI a year ago VS now 🌠')
+            'comparing the effort required to build something with AI')
+        st.subheader('a year ago VS now 🌠')
     with r:
     # Add content to the footer container
         st.markdown(
@@ -48,37 +49,26 @@ def main():
         with ll:
             st.markdown(f'or buy me a coffee', unsafe_allow_html=True)
         with rr:
-            st.markdown(donate, unsafe_allow_html=True)
-
-    st.markdown("""---""")
-    x, uno, due, y = st.columns([1,4,4,1], gap='medium')
-    with uno:
-        st.subheader('ONE YEAR AGO...')
-        st.write('...get the scripts for 1,000 hours of pitches. Clean them. Select the model, likely BERT or GPT-2. Format training data. Fine-tune the model. Wait. Give the model a prompt. Prey. Get a funny (not on purpose) but incoherent output :p')
-        
-    with due:
-        st.subheader('NOW...')
-        st.write('...write a 30-line prompt with some instructions and some examples. Give it to a LLM. Get a funny (on purpose) and coherent output c:')
-        
+            st.markdown(donate, unsafe_allow_html=True)    
         
 
     n, left, right, m = st.columns(spec = [1,4,4,1], gap = 'medium')
 
     with left:
-        st.write('ESTIMATED TIME: days')
-        st.markdown("""---""")
-        
+        st.subheader('ONE YEAR AGO...')
+       
+    
         tweet = """
                 <blockquote class="twitter-tweet" style="float:right; width:500px;">
                 <p lang="en" dir="ltr">I forced a bot to watch over 1,000 hours of startup pitch meetings and then asked it to re-create a startup pitch meeting of its own. Here is the first page. <a href="https://t.co/BK1yBZ2EB2">pic.twitter.com/BK1yBZ2EB2</a></p>&mdash; Roshan Patel (@roshanpateI) <a href="https://twitter.com/roshanpateI/status/1476620230692679680?ref_src=twsrc%5Etfw">December 30, 2021</a>
                 </blockquote>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 """
-        components.html(tweet, height=900)
+        components.html(tweet, height=800)
 
     with right:
-        st.write('ESTIMATED TIME: 20 minutes')
-        st.markdown("""---""")
+        st.subheader('NOW...')
+        
 
         openai.api_key = st.secrets["OPENAI_API_KEY"]
 
@@ -96,15 +86,30 @@ def main():
         )
         message = output["choices"][0]["message"]["content"]
         output_elem = st.empty()
-
+        
         stream_message=''
         for char in message:
             stream_message = stream_message + char
             output_elem.markdown(
                 f'<div style="text-align: justify;">{stream_message}</div>', unsafe_allow_html=True)
             time.sleep(0.001)
+ 
+
+    x, uno, due, y = st.columns([1, 4, 4, 1], gap='medium')
+    with uno:
+        st.markdown("""---""")
+        st.write('...get the scripts for 1,000 hours of pitches. Clean them. Select the model, likely BERT or GPT-2. Format training data. Fine-tune the model. Wait. Give the model a prompt. Prey. Get a funny (not on purpose) but incoherent output :p')
+        
+    with due:
+        st.markdown("""---""")
+        st.write('...write a 30-line prompt with some instructions and some examples. Give it to a LLM. Get a funny (on purpose) and coherent output c:')
         
     
+    _,ff, dd,_ = st.columns([1, 4, 4, 1], gap='medium')
+    with ff:
+        st.write('ESTIMATED TIME: days')
+    with dd:
+        st.write('ESTIMATED TIME: 20 minutes')
 
 if __name__ == "__main__":
     main()
