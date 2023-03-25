@@ -25,13 +25,12 @@ def main():
         follow_button = f'<a href="https://twitter.com/{username}?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@{username}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
         return follow_button
     
-    donate ='''
-<form action="https://www.paypal.com/donate" method="post" >
-<input type="hidden" name="hosted_button_id" value="UF6NAEW2NCQN2" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
-</form>
-'''
+    donate = """
+<form action = "https://www.paypal.com/donate" method = "post" target = "_blank" secure >
+<input type = "hidden" name = "hosted_button_id" value = "A3XCZ6HM4JN78" >
+<input type = "image" src = "https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border = "0" name = "submit" title = "PayPal - The safer, easier way to pay online!" alt = "Donate with PayPal button" >
+<img alt = "" border = "0" src = "https://www.paypal.com/en_IT/i/scr/pixel.gif" width = "0.5" height = "0.5" >
+</form >"""
     
     s,t,q,r,z = st.columns([1,2,6,3,1])
     with t:
